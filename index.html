@@ -3,20 +3,21 @@
 </head>
   
   <body>
-<?php
-  
-require __DIR__.'/vendor/autoload.php';
+    <h1>Olá<h1>
+    <?php
 
-use \App\Entity\Vaga;
+    require __DIR__.'/vendor/autoload.php';
 
-$vagas = Vaga::getVagas();
- 
+    use \App\Entity\Vaga;
+
+    $vagas = Vaga::getVagas();
 
 
-include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/listagem.php';
-include __DIR__.'/includes/footer.php';
 
-?>
-</body> 
+    include __DIR__.'/includes/header.php';
+    include __DIR__.'/includes/listagem.php';
+    include __DIR__.'/includes/footer.php';
+
+    ?>
+  </body> 
 </html>
